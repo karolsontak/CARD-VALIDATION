@@ -18,6 +18,7 @@ body {
     background: url(./bg.jpg);
 }
 
+/*Retangulo*/
 .container {
     width: 500px;
     display: flex;
@@ -28,38 +29,36 @@ body {
     border-radius: 7px;
 }
 
+/*Centralizador do conteúdo do retângulo*/
 .center {
     width: 100%;
     margin-right: 10px;
 }
 
+/*Centralizador do formulário do retângulo*/
 .center .form {
     display: flex;
     flex-direction: column;
 }
 
+/*Centralizador dos textos do retângulo*/
 .center .header {
     text-align: center;
 }
 
+/*Textos h2 do retângulo*/
 .center .header h2 {
     margin-bottom: 5px;
 }
 
+/*Textos p do retângulo*/
 .center .header p {
     margin-bottom: 15px;
     color: rgb(182, 182, 182);
     font-size: .95rem;
 }
 
-.center .form label {
-    font-size: .5rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-    margin-top: 15px;
-    color: rgb(182, 182, 182);
-}
-
+/*Formulário do Input (Número do Cartão)*/
 .center .form input {
     height: 40px;
     border-radius: 3px;
@@ -72,16 +71,7 @@ body {
     margin-bottom: 3px;
 }
 
-.center .form input:focus {
-    border: 1px solid #6275bb;
-}
-
-.center .form span {
-    letter-spacing: -.2px;
-    margin-bottom: 20px;
-    font-size: .9rem;
-}
-
+/*Formulário do Input (Botão de Validar)*/
 .center .form button {
     height: 40px;
     border-radius: 3px;
@@ -91,17 +81,4 @@ body {
     font-size: 1.1rem;
     margin-bottom: 5px;
     cursor: pointer;
-}
-
-.center .form button:hover {
-    background-color: #50609b;
-}
-
-.center .form .singin {
-    font-size: .9rem;
-    color: rgb(182, 182, 182);
-}
-
-.errorInput {
-    border: 2px solid rgb(207, 53, 53) !important;
 }
