@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url(./bg.jpeg);
+}
+
+/*Retangulo*/
+.container {
+    width: 500px;
+    display: flex;
+
+    background-color: #36393f;
+    color: #fff;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+/*Centralizador do conteúdo do retângulo*/
+.center {
+    width: 100%;
+    margin-right: 10px;
+}
+
+/*Centralizador do formulário do retângulo*/
+.center .form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Centralizador dos textos do retângulo*/
+.center .header {
+    text-align: center;
+}
+
+/*Textos h2 do retângulo*/
+.center .header h2 {
+    margin-bottom: 5px;
+}
+
+/*Textos p do retângulo*/
+.center .header p {
+    margin-bottom: 15px;
+    color: rgb(182, 182, 182);
+    font-size: .95rem;
+}
+
+/*Formulário do Input (Número do Cartão)*/
+.center .form input {
+    height: 40px;
+    border-radius: 3px;
+    background-color: #313339;
+    outline: none;
+    border: 1px solid rgb(35,35,35);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 10px;
+    margin-bottom: 3px;
+}
+
+/*Formulário do Botão (Validar)*/
+.center .form button {
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    background-color: #6275bb;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
