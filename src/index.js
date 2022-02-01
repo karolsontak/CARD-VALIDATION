@@ -1,50 +1,32 @@
-let cardNumber = document.getElementById("cardNumberId")  //Pega o valor do input 
-let validCard = cardNumber.value.replace(/(\d{4})?(\d{4})?(\d{4})?(\d{4})/, "$1-$2-$3-$4")
+import validator from './validator.js'
 
-console.log(validCard) = "ok"
-
-
-const validateButton = document.getElementById("buttonId"); //Pega o valor do botão 
-validateButton.addEventListener("click", function (e){
-    e.preventDefault();   
-}) 
-console.log(validateButton.isValid(buttonId))
+let cardNumber = document.getElementById("cardNumberId");  //Pega o valor do input 
 
 
-
-
-
-
-//function valid (e){
-//  e.preventDefault()   //(e) = event - preventDefault = cancela o evento
-  
-
-//
+function pushButton(e){
+    e.preventDefault();
+    let validCard = cardNumber.value;
+    let result = validator.isValid(validCard);
+    let mask = validator.maskify(validCard);
+    let text = document.getElementById("text");
+    if (result === true) {
+        text.textContent = "CARTÃO VÁLIDO " + mask;
+    }
+    else {
+        text.textContent = "CARTÃO INVÁLIDO " + mask;
+    }
     
+}
 
-
-
-//const validCard = cardNumber.value.replace(/(\d{4})?(\d{4})?(\d{4})?(\d{4})/, "$1-$2-$3-$4");
-
-//const validateButton = document.getElementById("buttonId").addEventListener("click", function (e){
-// e.preventDefault();
-//console.log(validateButton.isValid(buttonId))
-//console.log(validate)  
-//});
-
-
-//validate.addEventListener("click", function (e){
-//  e.preventDefault();
-//const result = validator.isValid(validCard);
-//console.log(result); 
+let validateButton = document.getElementById("buttonId"); //Pega o valor do botão   
+validateButton.addEventListener("click", pushButton)
 
 
 
 
 
-// MASCARA
-//function maskify(cardNumber){
-//  return cardNumber.split("").map((letter,i) => i < cardNumber.lenght - 4 ? "#" : letter).join("");
-// ou
-// maskify(isValid) {
-// return isValid.replace(/.(?=.{4})/g, "#");
+
+
+
+
+//    let reverseNumber = validCard.split("").reverse();  //split: converte string em array; reverse: inverte os numeros
