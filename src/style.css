@@ -79,6 +79,21 @@ body {
     background-color: #6275bb;
     color: #fff;
     font-size: 1.1rem;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     cursor: pointer;
+}
+
+.center .form p {
+    height: 40px;
+    border-radius: 3px;
+    background-color: #313339;
+    outline: none;
+    border: 1px solid rgb(35,35,35);
+    color: #fff;
+    font-size: larger;
+    padding: 0 10px;
+    margin-bottom: 3px;
+}
+    
+    
 }

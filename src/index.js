@@ -2,20 +2,19 @@ import validator from './validator.js'
 
 let cardNumber = document.getElementById("cardNumberId");  //Pega o valor do input 
 
-
-function pushButton(e){
-    e.preventDefault();
+function pushButton(){
     let validCard = cardNumber.value;
     let result = validator.isValid(validCard);
     let mask = validator.maskify(validCard);
-    let text = document.getElementById("text");
+    let resultValue = document.getElementById("resultValue");
     if (result === true) {
-        text.textContent = "CARTÃO VÁLIDO " + mask;
+        resultValue.textContent = mask + " CARTÃO VÁLIDO";
     }
     else {
-        text.textContent = "CARTÃO INVÁLIDO " + mask;
+        resultValue.textContent = mask + " CARTÃO INVÁLIDO";
     }
-    
+    document.getElementById("cardNumberId").value = ""
+
 }
 
 let validateButton = document.getElementById("buttonId"); //Pega o valor do botão   
