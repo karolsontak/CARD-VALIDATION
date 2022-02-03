@@ -82,4 +82,18 @@ body {
     margin-bottom: 3px;
     cursor: pointer;
 }
-    
+  
+/*Formulário do Input (Número do Cartão)*/
+.center .form p {
+    height: 40px;
+    border-radius: 3px;
+    background-color: #313339;
+    outline: none;
+    border: 1px solid rgb(35,35,35);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 10px;
+    margin-bottom: 3px;
+    display: none;
+
+}

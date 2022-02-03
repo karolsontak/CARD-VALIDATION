@@ -13,12 +13,11 @@ ser multiplicados por dois; se esse número for maior ou igual a 10, devemos
 adicionar os dígitos do resultado; o número a verificar será válido se a soma de
 seus dígitos finais for um múltiplo de 10.
 
-![gráfico do algoritmo de
-Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+![gráfico do algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
 ## Resumo do projeto
 
-Neste projeto foi desenvolvido um aplicativo da Web que permite ao usuário
+Neste [projeto] (https://github.com/karolsontak/card-validation-karolsontak/settings/pages) foi desenvolvido um aplicativo da Web que permite ao usuário
 validar o número de um cartão de crédito.
 
 ### Definição do produto
@@ -47,33 +46,9 @@ Por isso, o layout da página tem o intuito de entregar apenas informações dir
 e uma estética clean (limpa) para que o usuário consiga navegar com agilidade
 e ter um retorno rápido e prático. 
 
-### Scripts / Arquivos
+### Considerações Gerais
 
-- `REAME.md`: deve explicar como "deployar", instalar e executar a aplicação,
-  assim como uma introdução a aplicação, suas funcionalidades e as decisões que
-  foram tomadas.
-- `src/index.html`: aqui será o ponto de entrada da sua aplicação. Este arquivo
-  deve conter a marcação HTML e chamar o CSS e JavaScript necessários.
-- `src/style.css`: este arquivo deve conter as regras de estilo. Queremos que
-  você escreva suas próprias regras. Por isso, NÃO é permitido o uso de frameworks
-  de CSS (Bootstrap, materialize etc).
-- `src/validator.js`: aqui você deve implementar o objeto `validador`, o qual já
-  está _exportado_ no _boilerplate_. Este objeto (`validador`) deve conter dois métodos:
-  - **`validator.isValid(creditCardNumber)`**: `creditCardNumber` é um `string`
-    com o número do cartão a ser verificado. Esta função deve retornar um
-    `boolean`, dependendo de sua validade, de acordo com o [algoritmo de
-    Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm).
-  - **`validator.maskify(creditCardNumber)`**: `creditCardNumber` é um `string`
-    com o número do cartão e esta função deve retornar um `string` onde todos,
-    exceto os últimos quatro caracteres, são substituídos por um número (`#`) ou
-    🐱. Essa função deve sempre manter os quatro últimos caracteres intactos,
-    mesmo quando a `string` for mais curta.
-- `src/index.js`: aqui, você escreverá todo o código relacionado à interação do DOM
-  (selecionar, atualizar e manipular elementos do DOM e eventos). Nesse arquivo,
-  você precisará chamar as funções `validator.isValid` e `validator.maskify` conforme
-  seja necessário para atualizar o resultado na tela (UI).
-- `test/validator.spec.js`: este arquivo contem alguns testes de exemplo e aqui
-  você deve implementar os testes para `validator.isValid()` e `validator.maskify()`.
-
----
-
+- Este projeto foi desenvolvido individualmente
+- Este projeto se encontra em repositório no GitHub
+- Este projeto se encontra no GitPages
+- Este projeto não se utiliza de bibliotecas nem farmworks, apenas o uso de Vanilla JavaScript.
