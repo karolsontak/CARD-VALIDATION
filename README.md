@@ -1,6 +1,6 @@
 # PROJETO: Validador de Cartão de Crédito 
 
-## 1. Introdução
+## Introdução
 
 O [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm), também
 chamado de módulo 10, é um método de soma de verificação, usado para validar
@@ -15,14 +15,16 @@ seus dígitos finais for um múltiplo de 10.
 
 ![gráfico do algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
+
 ## Resumo do projeto
 
-Neste [projeto] (https://github.com/karolsontak/card-validation-karolsontak/settings/pages) foi desenvolvido um aplicativo da Web que permite ao usuário
+Este [projeto](https://karolsontak.github.io/card-validation-karolsontak/) foi desenvolvido para ser um aplicativo da Web que permite ao usuário
 validar o número de um cartão de crédito.
 
-### Definição do produto
 
-Este projeto foi elaborado com foco em atender a necessidade de bancos que 
+## Definição do produto
+
+A elaboração deste foi feita com foco em atender a necessidade de bancos que 
 precisam disponibizar um teste seguro ao cliente para verificação de autenticidade
 e desbloqueio de um novo cartão recebido.
 Foi pensando em perfis de clientes que não se sentem seguros ligando na operadora
@@ -30,7 +32,8 @@ e/ou não querem vivenciar o incomodo de ter que se digirir a uma agência banc�
 que esse projeto foi desenvolvido e tem o intuito de simplificar e facilitar a 
 vida do usuário.
 
-### Interface do usuário (UI)
+
+## Interface do usuário (UI)
 
 A interface permite ao usuário:
 
@@ -39,16 +42,19 @@ A interface permite ao usuário:
 - Constatar que todos os dígitos do número do cartão, exceto os últimos 4
   caracteres foram ocultados.
 
-### UX (Design da experiência do usuário)
+
+## UX (Design da experiência do usuário)
 
 O design da experiência do usuário foi estruturada com ideias de objetividade.
 Por isso, o layout da página tem o intuito de entregar apenas informações diretas 
 e uma estética clean (limpa) para que o usuário consiga navegar com agilidade
 e ter um retorno rápido e prático. 
 
-### Considerações Gerais
 
-- Este projeto foi desenvolvido individualmente
-- Este projeto se encontra em repositório no GitHub
-- Este projeto se encontra no GitPages
+## Considerações Gerais
+
+- O planejamento deste projeto se encontra no [Trello](https://trello.com/b/JsA4Whwv/card-validation)
+- O repositório deste projeto se encontra no [GitHub](https://github.com/karolsontak/card-validation-karolsontak)
+- O deploy deste projeto está hospedado no [GitPages](https://karolsontak.github.io/card-validation-karolsontak/)
 - Este projeto não se utiliza de bibliotecas nem farmworks, apenas o uso de Vanilla JavaScript.
+- Este projeto foi desenvolvido por Karol Sontak.
