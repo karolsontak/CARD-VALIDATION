@@ -19,13 +19,3 @@ function pushButton(){
 
 let validateButton = document.getElementById("buttonId"); //Pega o valor do botão   
 validateButton.addEventListener("click", pushButton)
-
-
-
-
-
-
-
-
-
-//    let reverseNumber = validCard.split("").reverse();  //split: converte string em array; reverse: inverte os numeros
