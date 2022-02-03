@@ -7,7 +7,7 @@ function pushButton(){
     let result = validator.isValid(validCard);
     let mask = validator.maskify(validCard);
     let resultValue = document.getElementById("resultValue");
-    if (result === true) {
+    if (result) {
         resultValue.textContent = mask + " CARTÃO VÁLIDO";
     }
     else {
