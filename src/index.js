@@ -1,29 +1,25 @@
 import validator from './validator.js'
 
-let cardNumber = document.getElementById("cardNumberId");  
+let getNumber = document.getElementById("getNumberId");  
 
-
-function clickButton(){
-    let validCard = cardNumber.value;
-    let result = validator.isValid(validCard);
-    let mask = validator.maskify(validCard);
-    let resultValue = document.getElementById("resultValueId");
-  
-    if (validCard == "" ){
+function result(){
+    let cardNumber = getNumber.value;
+    let validatorResult = validator.isValid(cardNumber);
+    let mask = validator.maskify(cardNumber);
+    let resultField = document.getElementById("resultFieldId");
+    
+    if (cardNumber == "" ){
         alert ("Digite o número")
         return
-    }
-    
-    if (result) {
-        resultValue.textContent = mask + " - CARTÃO VÁLIDO";
+    } 
+    if (validatorResult) {
+        resultField.textContent = mask + " - CARTÃO VÁLIDO";
     }
     else {
-        resultValue.textContent = mask + " - CARTÃO INVÁLIDO";
+        resultField.textContent = mask + " - CARTÃO INVÁLIDO";
     }
-    document.getElementById("cardNumberId").value = ""
-
+    document.getElementById("getNumberId").value = ""
 }
 
-
-let validateButton = document.getElementById("buttonId");  
-validateButton.addEventListener("click", clickButton)
+let runButton = document.getElementById("buttonId");  
+runButton.addEventListener("click", result)

@@ -1,16 +1,14 @@
 let validator = {
   
-  isValid: function (validCard) {
+  isValid: function (cardNumber) {
   
-    //Array: objeto global usado na construção de 'arrays'
-    let card = Array.from(validCard)   
+    let card = Array.from(cardNumber)   
     let reverseNumber = card.reverse()
     
-    //sum = 0: Inicia uma variável para armazenar o resultado e usar o loop for para visitar cada elemento e adicioná-los à soma do array.
     let sum = 0        
     for (let i = 0; i < reverseNumber.length; i++) {
       if (i % 2 != 0) {
-        reverseNumber[i] = (Number(reverseNumber[i])) * 2   //Number: objeto encapsulado que permite trabalhar com valores numéricos  
+        reverseNumber[i] = (Number(reverseNumber[i])) * 2   
         if (reverseNumber[i] > 9) {
           reverseNumber[i] = reverseNumber[i] - 9
           sum = sum + Number(reverseNumber[i])

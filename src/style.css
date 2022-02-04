@@ -35,17 +35,17 @@ body {
     margin-right: 10px;
 }
 
-/*Centralizador do formulário do retângulo*/
-.center .form {
-    display: flex;
-    flex-direction: column;
-    
-}
-
 /*Centralizador dos textos do retângulo*/
 .center .header {
     text-align: center;
     margin-top: 20px;
+}
+
+/*Centralizador do formulário do retângulo*/
+.center .form {
+    display: flex;
+    flex-direction: column;
+        
 }
 
 /*Textos h2 do retângulo*/
@@ -87,7 +87,7 @@ body {
     cursor: pointer;
 }
   
-/*Formulário do Result (Validade do Cartão)*/
+/*Result (Validade do Cartão)*/
 .form p {
     height: 40px;
     color: #fff;
