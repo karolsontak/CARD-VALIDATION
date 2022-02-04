@@ -39,11 +39,13 @@ body {
 .center .form {
     display: flex;
     flex-direction: column;
+    
 }
 
 /*Centralizador dos textos do retângulo*/
 .center .header {
     text-align: center;
+    margin-top: 20px;
 }
 
 /*Textos h2 do retângulo*/
@@ -69,6 +71,7 @@ body {
     font-size: 1.1rem;
     padding: 0 10px;
     margin-bottom: 3px;
+    margin-top: 15px;
 }
 
 /*Formulário do Botão (Validar)*/
@@ -79,6 +82,19 @@ body {
     background-color: #6275bb;
     color: #fff;
     font-size: 1.1rem;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    margin-top: 5px;
     cursor: pointer;
+}
+  
+/*Formulário do Result (Validade do Cartão)*/
+.form p {
+    height: 40px;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 25px;
+    align-content: center ;
+    text-align: center
+         
+      
 }

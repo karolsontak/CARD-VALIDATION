@@ -1,24 +1,29 @@
-let cardNumber = document.getElementById("cardNumberId");  //Pega o valor do input 
+import validator from './validator.js'
+
+let cardNumber = document.getElementById("cardNumberId");  
+
+
+function clickButton(){
     let validCard = cardNumber.value;
-    let result = validCard.isValid();
-    let mask = result.maskify();
-
-    if (result === true) {
-    validCard.textContent = "CARTÃO VÁLIDO";
-    }   
-    else {
-    validCard.textContent = "CARTÃO INVÁLIDO";
+    let result = validator.isValid(validCard);
+    let mask = validator.maskify(validCard);
+    let resultValue = document.getElementById("resultValueId");
+  
+    if (validCard == "" ){
+        alert ("Digite o número")
+        return
     }
+    
+    if (result) {
+        resultValue.textContent = mask + " - CARTÃO VÁLIDO";
+    }
+    else {
+        resultValue.textContent = mask + " - CARTÃO INVÁLIDO";
+    }
+    document.getElementById("cardNumberId").value = ""
 
-let validateButton = document.getElementById("buttonId"); //Pega o valor do botão   
-validateButton.addEventListener("click", cardNumber)
+}
 
 
-
-
-
-
-
-
-
-//    let reverseNumber = validCard.split("").reverse();  //split: converte string em array; reverse: inverte os numeros
+let validateButton = document.getElementById("buttonId");  
+validateButton.addEventListener("click", clickButton)
