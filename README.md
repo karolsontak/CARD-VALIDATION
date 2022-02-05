@@ -1,7 +1,17 @@
-# **PROJETO: Validador de Cartão de Crédito** 
+# **PROJETO: Validador de Cartão de Crédito** ______________________________________________________________________
 
+## **ÍNDICE**
 
-## **Introdução**
+## [Introdução](#introdução)
+## [Definição e objetivo do projeto](#definição)
+## [Desenvolvimento](#desenvolvimento)
+## [Interface do usuário (UI)](#interface)
+## [UX (Design da experiência do usuário)](#design)
+## [Considerações Gerais](#considerações)
+
+_________________________________________________________________________________________________________
+
+## **Introdução** <div id= "introdução"></div>
 
 O [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm), também
 chamado de módulo 10, é um método de soma de verificação, usado para validar
@@ -19,7 +29,8 @@ seus dígitos finais for um múltiplo de 10.
 
 __________________________________________________________________________________________________________
 
-## **Definição e objetivo do projeto**
+## **Definição e objetivo do projeto** <div id= "definição"></div>
+
 
 Este [projeto](https://karolsontak.github.io/card-validation-karolsontak/) foi desenvolvido para ser um aplicativo da Web que permite ao usuário
 validar o número de um cartão de crédito.
@@ -36,7 +47,9 @@ vida do usuário.
 __________________________________________________________________________________________________________
 
 
-## **Desenvolvimento**
+## **Desenvolvimento** <div id= "desenvolvimento"></div>
+
+O [protótipo](Protótipo.jpeg) da página foi rascunhado apenas para criar uma perspectiva do que seria o projeto
 
 O planejamento de execução deste projeto foi construído a partir de pequenos passos ilustrados com auxílio do Trello.
 
@@ -54,7 +67,7 @@ As atualizações do projeto ao GitHub foram feitas através dos comandos 'git' 
 __________________________________________________________________________________________________________
 
 
-## **Interface do usuário (UI)**
+## **Interface do usuário (UI)** <div id= "interface"></div>
 
 A interface permite ao usuário:
 
@@ -66,7 +79,7 @@ A interface permite ao usuário:
 __________________________________________________________________________________________________________
 
 
-## **UX (Design da experiência do usuário)**
+## **UX (Design da experiência do usuário)** <div id= "design"></div>
 
 O design da experiência do usuário foi estruturada com ideias de objetividade.
 Por isso, o layout da página tem o intuito de entregar apenas informações diretas 
@@ -76,13 +89,13 @@ e ter um retorno rápido e prático.
 __________________________________________________________________________________________________________
 
 
-## **Considerações Gerais**
+## **Considerações Gerais** <div id= "considerações"></div>
 
 - O planejamento deste projeto se encontra no [Trello](https://trello.com/b/JsA4Whwv/card-validation)
 - O repositório deste projeto se encontra no [GitHub](https://github.com/karolsontak/card-validation-karolsontak)
 - O deploy deste projeto está hospedado no [GitPages](https://karolsontak.github.io/card-validation-karolsontak/)
 - Este projeto não se utiliza de bibliotecas nem farmworks, apenas o uso de Vanilla JavaScript.
 - Foram executados dois testes: validator.isValid e validator.maskify. 
-Os testes unitários cobriram 100% dos statements, functions e lines e branches.
+- Os [testes unitários](Testes.jpeg) cobriram 100% dos statements, functions e lines e branches.
 - Este projeto conta com o uso de SSH key associada a conta do GitHub.
-- Este projeto foi desenvolvido por Karol Sontak.
+- Este projeto foi desenvolvido por [Karol Sontak](https://github.com/karolsontak).
