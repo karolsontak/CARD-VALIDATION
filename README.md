@@ -3,12 +3,12 @@
 
 ## **ÍNDICE**
 
-# [Introdução](#introdução)
-# [Definição e objetivo do projeto](#definição)
-# [Desenvolvimento](#desenvolvimento)
-# [Interface do usuário (UI)](#interface)
-# [UX (Design da experiência do usuário)](#design)
-# [Considerações Gerais](#considerações)
+### [Introdução](#introdução)
+### [Definição e objetivo do projeto](#definição)
+### [Desenvolvimento](#desenvolvimento)
+### [Interface do usuário (UI)](#interface)
+### [UX (Design da experiência do usuário)](#design)
+### [Considerações Gerais](#considerações)
 
 _________________________________________________________________________________________________________
 
