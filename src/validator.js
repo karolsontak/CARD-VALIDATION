@@ -31,9 +31,10 @@ let validator = {
 
   maskify: function (maskNumber) {
     
+    const lastFourNumber = 4
     let mask = ""
         for (let i = 0; i < maskNumber.length; i++) {
-      if (i >= ((maskNumber.length) - 4)) {
+      if (i >= ((maskNumber.length) - lastFourNumber)) {
         mask = mask + maskNumber.charAt(i)
       } else {
         mask = mask + "#"
