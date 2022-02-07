@@ -5,23 +5,23 @@ let validator = {
     let card = Array.from(cardNumber)   
     let reverseNumber = card.reverse()
     
-    let sum = 0        
+    let luhnCheck = 0        
     for (let i = 0; i < reverseNumber.length; i++) {
       if (i % 2 != 0) {
         reverseNumber[i] = (Number(reverseNumber[i])) * 2   
         if (reverseNumber[i] > 9) {
           reverseNumber[i] = reverseNumber[i] - 9
-          sum = sum + Number(reverseNumber[i])
+          luhnCheck = luhnCheck + Number(reverseNumber[i])
         } 
         else {
-          sum = sum + (reverseNumber[i])
+          luhnCheck = luhnCheck + (reverseNumber[i])
         }
       } 
       else {
-        sum = sum + Number(reverseNumber[i])
+        luhnCheck = luhnCheck + Number(reverseNumber[i])
       }
     }
-    if (sum % 10 === 0) {
+    if (luhnCheck % 10 === 0) {
       return true
 
     } else {
