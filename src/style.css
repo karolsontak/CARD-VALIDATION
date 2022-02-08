@@ -19,45 +19,36 @@ body {
 /*Retangulo*/
 .container {
     width: 500px;
-    display: flex;
     background-color: #36393f;
     color: #fff;
     padding: 30px;
     border-radius: 7px; 
-}
-
-/*Centralizador do conteúdo do retângulo*/
-.center {
-    width: 100%;
     margin-right: 10px;
-}
-
-/*Centralizador dos textos do retângulo*/
-.center .headline {
     text-align: center;
     margin-top: 20px;
 }
 
 /*Centralizador do formulário do retângulo*/
-.center .form {
+.form {
     display: flex;
     flex-direction: column;    
 }
 
 /*Textos h2 do retângulo*/
-.center .header h2 {
+h2 {
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 /*Textos p do retângulo*/
-.center .header p {
+p {
     margin-bottom: 15px;
     color: rgb(182, 182, 182);
     font-size: .95rem;
 }
 
 /*Formulário do Input (Número do Cartão)*/
-.center .form input {
+.form input {
     height: 40px;
     border-radius: 3px;
     background-color: #313339;
@@ -71,7 +62,7 @@ body {
 }
 
 /*Formulário do Botão (Validar)*/
-.center .form button {
+.form button {
     height: 40px;
     border-radius: 3px;
     border: none;
@@ -90,7 +81,5 @@ body {
     font-size: 1.2rem;
     margin-top: 25px;
     align-content: center ;
-    text-align: center
-         
-      
+    text-align: center      
 }
