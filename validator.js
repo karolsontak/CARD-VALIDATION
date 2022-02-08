@@ -1,11 +1,10 @@
 let validator = {
   
   isValid: function (cardNumber) {
-  
     let card = Array.from(cardNumber)   
-    let reverseNumber = card.reverse()
-    
+    let reverseNumber = card.reverse()  
     let luhnCheck = 0        
+    
     for (let i = 0; i < reverseNumber.length; i++) {
       if (i % 2 != 0) {
         reverseNumber[i] = (Number(reverseNumber[i])) * 2   
@@ -23,14 +22,13 @@ let validator = {
     }
     if (luhnCheck % 10 === 0) {
       return true
-
-    } else {
+    } 
+    else {
       return false
     }
   },
 
-  maskify: function (maskNumber) {
-    
+  maskify: function (maskNumber) {  
     const lastFourNumber = 4
     let mask = ""
         for (let i = 0; i < maskNumber.length; i++) {

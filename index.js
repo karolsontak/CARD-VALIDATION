@@ -2,15 +2,14 @@ import validator from './validator.js'
 
 let getNumber = document.getElementById("getNumberId");  
 
-function result(){
+function cardValidation(){
     let cardNumber = getNumber.value;
     let validatorResult = validator.isValid(cardNumber);
     let mask = validator.maskify(cardNumber);
     let resultField = document.getElementById("resultFieldId");
     
-    if (cardNumber == "" ){
-        alert ("Digite o número")
-        return
+    if (cardNumber == "" ){  
+        return resultField.textContent = "Digite um número" 
     } 
     if (validatorResult) {
         resultField.textContent = mask + " - CARTÃO VÁLIDO";
@@ -22,4 +21,4 @@ function result(){
 }
 
 let runButton = document.getElementById("buttonId");  
-runButton.addEventListener("click", result)
+runButton.addEventListener("click", cardValidation)
